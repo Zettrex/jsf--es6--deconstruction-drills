@@ -22,7 +22,7 @@ var name = obj.name;
 var age = obj.age;
 var job = obj.job;
 // desconstruct
-
+var {name, age, job} = obj;
 
 // question
 
@@ -35,7 +35,7 @@ var obj = {
 var name = obj.name;
 var job = obj.job;
 // desconstruct
-
+var {name, job} = obj;
 
 
 // question
@@ -52,7 +52,7 @@ var articles = apiResult.articles;
 var errorMessage = apiResult.errorMessage;
 var timeStamp = apiResult.timeStamp;
 // desconstruct
-
+var {articles,errorMessage,timeStamp} = apiResult;
 
 
 // question
@@ -68,7 +68,7 @@ var apiResult = {
 var articles = apiResult.articles;
 var errorMessage = apiResult.errorMessage;
 // desconstruct
-
+var {articles, errorMessage} = apiResult;
 
 /**
  * Parameter deconstruction
@@ -108,7 +108,9 @@ function testFunction(obj) {
     // function code...
 }
 // desconstruct
+function testFunction({name, age, job}) {
 
+}
 
 
 // question
@@ -126,7 +128,9 @@ function testFunction(obj) {
     // function code...
 }
 // desconstruct
+function testFunction({name, job}) {
 
+}
 
 
 
@@ -148,7 +152,9 @@ function testFunction(apiResult) {
     // function code...
 }
 // desconstruct
+function testFunction({articles, errorMessage, timeStamp}) {
 
+}
 
 
 // question
@@ -168,3 +174,6 @@ function testFunction(apiResult) {
     // function code...
 }
 // desconstruct
+function testFunction({articles, errorMessage}) {
+
+}
